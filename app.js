@@ -2,6 +2,7 @@ var dictionnaire = function () {
 
 	this.inputWord = document.getElementById('mot');
 	this.result = document.getElementById("result");
+	this.abcedaire = document.getElementById("abcedaire");
 	
 	this.dico = {
 		a: {
@@ -52,7 +53,20 @@ var dictionnaire = function () {
 
 		this.getWord();
 		// this.roam('arnaud', this.dico);
+		this.letterList(this.dico);
 	};	
+
+	this.letterList = function(dico) {
+
+		var that = this;
+
+		for(key in that.dico){
+			var input = document.createElement("input");
+			input.setAttribute("type", "button");
+		}
+
+		console.log(that.dico);
+	}
 
 	this.roam = function (word, dico, callback) {
 
@@ -82,8 +96,6 @@ var dictionnaire = function () {
 
 			that.result.innerHTML = "Mot introuvable moron";
 		}
-
-
 	};
 
 	this.getWord = function () {

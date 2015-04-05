@@ -3,36 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	
+	<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Open+Sans:700italic,400,300,700,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/mfglabs_iconset.css">
+	<link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body>
+
+<div class="offcanvas" id="offcanvas">
+	<ul></ul>
+</div>
 	
-	<form action="#">
-		<label><span>Mot</span>
-		<input type="text" id="mot"></label>
-	</form>
+<div class="container">
 
-	<div id="result">
-		
+	<header>
+		<h1><img src="img/logo.png" alt="Logo"></h1>
+		<ul id="abcedaire"></ul>
+	</header>
+
+	<nav>
+		<form action="#">
+			<label><input type="text" id="mot" placeholder="Which word are you looking for?"><span><i class="	
+icon-magnifying"></i></span></label>
+		</form>
+	</nav>
+	
+	<div id="result" class="fieldset">
+		<h2><span>Help</span></h2>
+		<p>Type a word for search, if no present you add him with the form appear.</p>
 	</div>
-
-	<hr>
-
-	<div id="abcedaire">
-	</div>
-
-	<hr>
-
-	<form action="#" id="addForm">
+	
+	
+	<!-- <form action="#" id="addForm">
 		<h2>Add words moron</h2>
 		<label><span>Word</span>
 		<input type="text" id="word"></label>
 		<input type="submit">
-	</form>
-		
-	<hr>
-
-	<button id="logMe">Coucou log</button>
-
+	</form> -->
+	
+	
+	
+	<!-- <button id="logMe">Coucou log</button> -->
+</div>
 	<script src="app.js"></script>
 </body>
 </html>

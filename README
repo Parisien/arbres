@@ -1,0 +1,19 @@
+SAM Dictionnaire
+----------------
+
+Member
+- Morgane Le Saout
+- Stephen Richard
+- Arnaud Allouis
+
+Features
+- Rechercher un mot
+- Trouve une image traitant du sujet grâce à une API.
+- Certaine features sont quasiment fini sont buggé:
+	- Ajout d'un mot
+	- Afficher tout les mots par lettre
+
+Information:
+- Tout est codé en fullJavascript, sans framework ou librairie.
+- Nous avons fais le dictionnaire en Anglais afin de pouvoir utiliser l'API d'image, on trouver que cela étais une vrai valeur ajouter.
+- Nous avons essayer de faire un code le plus réutilisable possible
